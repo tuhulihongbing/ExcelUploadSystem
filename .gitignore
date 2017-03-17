@@ -1,5 +1,12 @@
-/evalidator/.idea
-/evalidator/upload
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+
+evalidator/.idea
+evalidator/upload
+*.pyc
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -7,7 +14,7 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 <<<<<<< HEAD
-*.pyc
+
 =======
 >>>>>>> parent of 0d96407... upload files
 
