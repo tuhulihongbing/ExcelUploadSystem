@@ -1,0 +1,47 @@
+	<tr>
+		<td valign="top"><div>
+			<table class="msrs-topBreadcrumb" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td><span><div>
+                        {% for i in res.level  %}
+						{% if not forloop.last%}<a href="{% url 'folder' %}?path={{ i.id }}&ViewMode=List">{{ i.name }}</a>>
+                            {% else %}<strong>{{ i.name }}</strong>
+                        {% endif %}
+                        {% endfor %}
+					</div></span></td>
+					<td align="right"><span><a href="{% url 'folder' %}?ViewMode=List">主文件夹</a>&nbsp;| <a href="/Reports/Pages/Subscriptions.aspx?ViewMode=List">我的订阅</a>&nbsp;| <a href="http://go.microsoft.com/fwlink/?LinkID=301612" target="MicrosoftReportingServicesHelp">帮助</a></span></td>
+				</tr>
+			</table>
+			<table class="msrs-header" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td class="msrs-logo" width="36">
+                        {% if res.isfolder %}
+                        <img src="/static/reporting/folder_32.gif" alt="文件夹" style="height:32px;width:32px;border-width:0px;" />
+                        {% else %}
+                         <img src="/static/reporting/RB_document_32.gif" alt="报表" style="height:32px;width:32px;border-width:0px;">
+                        {% endif %}
+                    </td>
+					<td><P class="msrs-site_title">Excel Management System</P><P class="msrs-page_title">{{ res.currentpage.name }} </P></td>
+					<td class="msrs-searchContainer" align="right" valign="bottom"><table class="msrs-searchBar" cellpadding="0" cellspacing="0" onfocus="document.getElementById('S_searchButtonID').disabled = false" onblur="document.getElementById('S_searchButtonID').disabled = true" onmouseover="document.getElementById('S_searchButtonID').disabled = false" onmouseout="document.getElementById('S_searchButtonID').disabled = true">
+						<tr>
+							<td style="padding:0px;"><input name="ctl18$ctl22$S_searchTextBoxID" type="text" value="搜索" id="S_searchTextBoxID" class="msrs-searchDefaultFont" onclick="SearchBarClicked('S_searchTextBoxID', '搜索', 'msrs-searchBarNoBorder' );" onblur="SearchBarBlured('S_searchTextBoxID','搜索', 'msrs-searchDefaultFont');" onkeypress="
+if ((event.which &amp;&amp; event.which == 13) || (event.keyCode &amp;&amp; event.keyCode == 13))
+{
+    var searchButton = document.getElementById('S_searchButtonID');
+    searchButton.disabled = false;
+    searchButton.click();
+    event.cancelBubble = true;
+    return false;
+}
+else
+    return true;
+" /></td>
+							<td style="padding:0px;"><input type="image" name="ctl18$ctl22$S_searchButtonID" id="S_searchButtonID" class="msrs-searchButton" disabled="true" src="/static/reporting/search_21x.gif" alt="转到" style="border-width:0px;" /></td>
+						</tr>
+
+					</table></td>
+				</tr>
+			</table>
+
+		</div></td>
+	</tr>

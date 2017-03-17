@@ -1,0 +1,188 @@
+<!--列表页参考sciencedirect的列表格式-->
+{% extends 'base.html' %}
+{% block title %}
+    文献翻译网--你想要的都在这里！
+{% endblock %}
+{% block keywords %}
+    文献
+{% endblock %}
+
+{% block custom_css_js %}
+{% load staticfiles %}
+    <link href="{% static 'css/custom_list.css'%}?v=1" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div id="pubPg">
+    <div id="header">
+        <div class="quicksearch low">
+            <a name="Skip Buttons">
+            </a>
+            <div class="extSearch" aria-label="Quick Search" role="search">
+                <form id="quickSearch" name="qkSrch" method="get" target="_top" action="/science">
+                    <div>
+                        <input type="hidden" name="_ob" value="QuickSearchURL">
+                        <input type="hidden" name="_method" value="submitForm">
+                        <input type="hidden" name="_acct" value="C000228598">
+                        <input type="hidden" name="searchtype" value="a">
+                        <input type="hidden" name="_origin" value="rslt_list">
+                        <input type="hidden" name="_zone" value="qSearch">
+                        <input type="hidden" name="md5" value="33d75ff49244f6c57442c01614c198f3">
+                        <input class="all" placeholder="Search all fields" aria-label="Search all fields"
+                        type="text" name="qs_all" id="qs_all" value="python" size="34" maxlength="450"
+                        title="Search all fields">
+                        <input class="author" placeholder="Author name" aria-label="Author name"
+                        type="text" name="qs_author" id="qs_author" value="" size="13" maxlength="450"
+                        title="e.g. J S Smith or John Smith or Smith JS" style="_width:100%">
+                        <input class="srctitle ui-autocomplete-input" placeholder="Journal or book title"
+                        aria-label="Journal or book title" type="text" id="qs_title" name="qs_title"
+                        value="" size="13" maxlength="450" title="For example: journal of molecular biology"
+                        autocomplete="off">
+                        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible">
+                        </span>
+                        <input class="volumelist" placeholder="Volume" aria-label="Volume" type="text"
+                        name="qs_vol" id="qs_vol" value="" size="2" maxlength="10">
+                        <input class="issuelist" placeholder="Issue" aria-label="Issue" type="text"
+                        name="qs_issue" id="qs_issue" value="" size="2" maxlength="10">
+                        <input class="pages" placeholder="Page" aria-label="Page" type="text"
+                        name="qs_pages" id="qs_pages" value="" size="2" maxlength="10" title="For example: 14-27">
+                        <input class="button" id="submit_search" type="Submit" alt="Submit Quick Search"
+                        value="" title="Submit Quick Search" name="sdSearch">
+                        <!--<a class="advanced" href="http://www.sciencedirect.com/science/search">-->
+                            <!--Advanced search-->
+                        <!--</a>-->
+                    </div>
+                </form>
+            </div>
+            <!--<script>-->
+                <!--autoCompleteInit('/' + 'science' + '/jfind/auto');-->
+            <!--</script>-->
+        </div>
+    </div>
+    <div id="sdHeader" class="outerWrapper">
+        <div class="sdContent">
+            <div id="specialOffer">
+            </div>
+            <div id="spriteFlag" data-sprite="true">
+                &nbsp;
+            </div>
+            <div id="sdBody" class="pageText">
+                <div id="bodyResults" class="cbodyAllResults" style="padding-right: 0px;">
+                    <div aria-label="Science Direct" role="Main" class="searchPg">
+                        <div class="amtResults refineAvail adAvail skyScraper suggBooks">
+                            <div class="iconLinks rssSearchBlk">
+                                <div style="float:left;">
+                                    <h4 class="queryText">
+                                        <strong>
+                                            Search results: 15,614
+                                        </strong>
+                                        results found.
+                                    </h4>
+                                </div>
+                                <input type="hidden" name="TOTAL_PAGES" value="625">
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                        <div class="mainResults">
+                            <div id="rsRightCol" class="skyScraper suggBooks">
+                                <div class="resultList">
+                                    <div id="bodyMainResults" class="bookResultsExp " role="region" aria-label="Search Results">
+                                        <ol class="articleList results">
+                                            <li class="detail">
+                                                <ul class="article">
+                                                    <li class="selection">
+                                                        <input class="checkBox" type="checkbox" name="art" value="1-s2.0-S0167642317300242"
+                                                        aria-labelledby="title_S0167642317300242" style="padding-left:6px;">
+                                                    </li>
+                                                    <li class="title ">
+                                                        <h2 style="font-family: 'Arial Unicode MS', 'Arial Unicode', Arial, 'URW Gothic L', Helvetica, Tahoma, 'Cambria Math', sans-serif;font-size: 14.4px;">
+                                                            <a id="title_S0167642317300242" href="http://www.sciencedirect.com/science/article/pii/S0167642317300242"
+                                                            class="cLink artTitle S_C_artTitle " data-docsubtype="fla" querystr="?_rdoc=1&amp;_fmt=high&amp;_origin=search&amp;_docanchor=&amp;_ct=15614&amp;_zone=rslt_list_item&amp;md5=0f357f2109df324be80fd6d361ef1c34">
+                                                                A
+                                                                <span class="hit">
+                                                                    python
+                                                                </span>
+                                                                framework for programming autonomous robots using a declarative approach
+                                                            </a>
+                                                        </h2>
+                                                        <span class="articleTypeLabel">
+                                                            Original Research Article
+                                                        </span>
+                                                    </li>
+                                                    <li class="source ">
+                                                        <i>
+                                                            Science of Computer Programming
+                                                        </i>
+                                                        ,
+                                                        <i>
+                                                            <b>
+                                                                <font color="#FF0000">
+                                                                    In Press, Accepted Manuscript
+                                                                </font>
+                                                            </b>
+                                                        </i>
+                                                        ,
+                                                        <i>
+                                                            Available online 9 February 2017
+                                                        </i>
+                                                    </li>
+                                                    <li class="authorTxt ">
+                                                        Loris Fichera, Fabrizio Messina, Giuseppe Pappalardo, Corrado Santoro
+                                                    </li>
+                                                    <li class="external ">
+                                                        <div class="txt external">
+                                                            <ul class="extLinkBlock">
+                                                                <li>
+                                                                    <a href="#" data-type="abstract" role="button" class="absLink" data-url="http://www.sciencedirect.com/science/preview/abstract?_rdoc=1&amp;_origin=search&amp;_ct=15614&amp;_zone=rslt_list_item&amp;_fmt=full&amp;_pii=S0167642317300242&amp;_issn=01676423&amp;_tab=afr&amp;absLinks=y&amp;md5=454839b006c5724417ab03c540c84eaa"
+                                                                    aria-describedby="title_S0167642317300242" aria-controls="abs_S0167642317300242"
+                                                                    aria-expanded="false">
+                                                                        <span class="arrowSide">
+                                                                        </span>
+                                                                        <span class="preTxt">
+                                                                            Abstract
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a aria-describedby="title_S0167642317300242" rel="nofollow" href="/science?_ob=ShoppingCartURL&amp;_method=add&amp;_eid=1-s2.0-S0167642317300242&amp;_ts=1486734504&amp;md5=f5398d5c78f9cafd838e87ddc7cae255">
+                                                                        <span class="pdfIconSmall">
+                                                                            &nbsp;
+                                                                        </span>
+                                                                        Purchase PDF - $35.95
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <div id="abs_S0167642317300242" class="previewBox abstract hidden">
+                                                            </div>
+                                                            <div id="rabs_S0167642317300242" class="previewBox rabstract hidden">
+                                                            </div>
+                                                            <div id="gabs_S0167642317300242" class="previewBox gabstract hidden">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="accessBlock colLast">
+                                                        <span class="dunsub_article_sci_dir sci_dir" title="Not entitled to full text"
+                                                        alt="Not entitled to full text">
+                                                            &nbsp;
+                                                            <span class="offscreen">
+                                                                Not entitled to full text
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

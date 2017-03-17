@@ -1,0 +1,121 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+<HEAD lang="zh-CN">
+	<META HTTP-EQUIV="X-UA-Compatible" CONTENT="IE=5">
+	<script language="JScript" type="text/Javascript" src="/static/reporting/ReportingServices.js"></script>
+
+	<TITLE>{% block title %}{{ res.currentpage.name }} - {% endblock %}Excel 管理器</TITLE>
+	<link href="/static/reporting/ReportingServices.css"type="text/css" rel="stylesheet">
+	<META Name="Report Server" CONTENT="http://bi.tuhu.cn:80/ReportServer">
+	{% block custom_css_js %}{% endblock %}
+</HEAD>
+<BODY style="margin:0px;" class="msrs-normal" onload="InitContextMenu('contextMenuCollection','contextMenuCollection__selectedItemIdHiddenField',new Array('contextMenuCollection_ReportContextMenuIdDiv','contextMenuCollection_FolderContextMenuIdDiv'),'S_searchTextBoxID','搜索');ControlConditionalEnable10(true);"><form name="ui_form" method="POST" action="Folder.aspx?path=%2fold&amp;ViewMode=List" id="ui_form" enctype="multipart/form-data">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+    <input type="hidden" name="pageid" id="pageid" value="{{ res.currentpage.id }}" />
+<input type="hidden" name="pagename" id="pagename" value="{{ res.currentpage.name }}" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MQ8WAh4RUGFnZVZpZXdTdGF0ZVRpbWUoKVlTeXN0ZW0uSW50NjQsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4ORI2MzYyMzQ0Mjc1Mzk2MjQ3MTEWAgIBD2QWAgIDDxYCHgZvbmxvYWQF4QFJbml0Q29udGV4dE1lbnUoJ2NvbnRleHRNZW51Q29sbGVjdGlvbicsJ2NvbnRleHRNZW51Q29sbGVjdGlvbl9fc2VsZWN0ZWRJdGVtSWRIaWRkZW5GaWVsZCcsbmV3IEFycmF5KCdjb250ZXh0TWVudUNvbGxlY3Rpb25fUmVwb3J0Q29udGV4dE1lbnVJZERpdicsJ2NvbnRleHRNZW51Q29sbGVjdGlvbl9Gb2xkZXJDb250ZXh0TWVudUlkRGl2JyksJ1Nfc2VhcmNoVGV4dEJveElEJywn5pCc57SiJykWAmYPZBYCZg9kFgJmD2QWBmYPFgIeB1Zpc2libGVoZAIBD2QWAmYPZBYCZg9kFgJmDxYIHgZ2YWxpZ24FA3RvcB4GaGVpZ2h0BQIzMB4HY29sc3BhbgUBNB4FY2xhc3MFFG1zcnMtdmFsaWRhdGlvbmVycm9yZAICD2QWBGYPZBYCZg9kFgJmD2QWAgIBD2QWAmYPZBYCAgEPZBYCZg8WAh4JaW5uZXJodG1sBR1TUUwgU2VydmVyIFJlcG9ydGluZyBTZXJ2aWNlc2QCAQ9kFgJmD2QWAmYPZBYCZg9kFgJmD2QWAmYPZBYCZg9kFgRmDxYCHwJoZAIBD2QWAmYPZBYCZg9kFgJmD2QWBmYPFgYeCGxhbmd1YWdlBQpKYXZhc2NyaXB0HgR0eXBlBQ90ZXh0L0phdmFzY3JpcHQfBwVQZnVuY3Rpb24gQ29udHJvbENvbmRpdGlvbmFsRW5hYmxlMTAodG9wTGV2ZWxFbmFibGUpIHtFbmFibGVNdWx0aUJ1dHRvbnMoJ3VpXycpO31kAgIPFgIfAmhkAgMPZBYCZg9kFgZmDxYCHgV3aWR0aAUCMTBkAgEPFgIfCgUEMTAwJRYCZg8WBB4LY2VsbHBhZGRpbmcFATAeC2NlbGxzcGFjaW5nBQEwFgJmD2QWAmYPFgIfBAUDNXB4ZAICDxYCHwoFAjEwZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUcY3RsMTgkY3RsMjIkU19zZWFyY2hCdXR0b25JRMImLFnLq/mVLfS5FPq5PIj0H6w4" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ui_form'];
+if (!theForm) {
+    theForm = document.ui_form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A08DB298" />
+</div><span><noscript><table width="100%" class="msrs-normal">
+	<tr>
+		<td valign="top" height="30" colspan="4" class="msrs-validationerror"><img src="/static/reporting/blank.gif" height="1" width="24" border="0" /><img src="/static/reporting/line_err1.gif" height="16" width="16" alt="错误" /><img src="/static/reporting/blank.gif" height="1" width="12" border="0" />此页可能无法正常显示，因为您的浏览器不支持脚本或已禁用活动脚本。</td>
+	</tr>
+</table>
+</noscript>
+
+{% block navi %}
+{#{% include 'navi.html' %}#}
+{% endblock %}
+{% block content %}
+    Hi, this is the main content!
+{% endblock %}
+{% block footer %}
+{#    {% include 'footer.html' %}#}
+{% endblock %}
+
+
+<div id="contextMenuCollection" class="msrs-MenuUIPopupBody" style="display:none;position:absolute;">
+	<input name="contextMenuCollection$_selectedItemIdHiddenField" type="hidden" id="contextMenuCollection__selectedItemIdHiddenField" /><div id="contextMenuCollection_ReportContextMenuIdDiv" onkeydown="NavigateMenuKeyPress(event)">
+		<table cellpadding="0" cellspacing="0" class="msrs-MenuUI">
+			<tr>
+				<td><img class="msrs-MenuUIMinWidth" src="/static/reporting/blank.gif" style="border-width:0px;" /></td>
+			</tr>
+			<tr>
+				<td id="ui_rcmmove" class="msrs-MenuUIItemTableCell" group="0" underline="OGUL:0ReportContextMenuIdDiv" onmouseover="FocusContextMenuItem('ui_rcmmove','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_rcmmove','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_rcmmove','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();" href="javascript:__doPostBack('contextMenuCollection$ReportContextMenuIdDiv$ctl05','')"><Span class="msrs-menuItemImageContainer"></Span><Span class="msrs-menuItemLabelContainer">移动</Span></a></td>
+			</tr>
+			<tr>
+				<td id="ui_rcmdelete" class="msrs-MenuUIItemTableCell" group="0" onmouseover="FocusContextMenuItem('ui_rcmdelete','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_rcmdelete','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_rcmdelete','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();return ShouldDelete('是否确实要删除“{0}”?');" href="javascript:__doPostBack('contextMenuCollection$ReportContextMenuIdDiv$ctl09','')"><Span class="msrs-menuItemImageContainer"><img alt="" src="/static/reporting/delitem.gif" style="border-width:0px;" /></Span><Span class="msrs-menuItemLabelContainer">删除</Span></a></td>
+			</tr>
+			<tr id="OGUL:0ReportContextMenuIdDiv">
+				<td><Div class="msrs-MenuUISeparator">#</Div></td>
+			</tr>
+			<tr>
+				<td id="ui_rcmmansub" class="msrs-MenuUIItemTableCell" group="1" underline="OGUL:1ReportContextMenuIdDiv" onmouseover="FocusContextMenuItem('ui_rcmmansub','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_rcmmansub','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_rcmmansub','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();" href="javascript:__doPostBack('contextMenuCollection$ReportContextMenuIdDiv$ctl16','')"><Span class="msrs-menuItemImageContainer"><img alt="" src="/static/reporting/subscription_report.gif" style="border-width:0px;" /></Span><Span class="msrs-menuItemLabelContainer">订阅...</Span></a></td>
+			</tr>
+			<tr>
+				<td id="ui_rcmclr" class="msrs-MenuUIItemTableCell" group="1" onmouseover="FocusContextMenuItem('ui_rcmclr','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_rcmclr','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_rcmclr','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();" href="javascript:__doPostBack('contextMenuCollection$ReportContextMenuIdDiv$ctl21','')"><Span class="msrs-menuItemImageContainer"><img alt="" src="/static/reporting/16linked.gif" style="border-width:0px;" /></Span><Span class="msrs-menuItemLabelContainer">创建链接报表...</Span></a></td>
+			</tr>
+			<tr>
+				<td id="ui_rcmviewrh" class="msrs-MenuUIItemTableCell" group="1" onmouseover="FocusContextMenuItem('ui_rcmviewrh','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_rcmviewrh','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_rcmviewrh','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();" href="javascript:__doPostBack('contextMenuCollection$ReportContextMenuIdDiv$ctl26','')"><Span class="msrs-menuItemImageContainer"></Span><Span class="msrs-menuItemLabelContainer">查看报表历史记录</Span></a></td>
+			</tr>
+			<tr id="OGUL:1ReportContextMenuIdDiv">
+				<td><Div class="msrs-MenuUISeparator">#</Div></td>
+			</tr>
+			<tr>
+				<td id="ui_rcmsec" class="msrs-MenuUIItemTableCell" group="2" underline="OGUL:1ReportContextMenuIdDiv" onmouseover="FocusContextMenuItem('ui_rcmsec','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_rcmsec','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_rcmsec','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();" href="javascript:__doPostBack('contextMenuCollection$ReportContextMenuIdDiv$ctl32','')"><Span class="msrs-menuItemImageContainer"><img alt="" src="/static/reporting/security16.gif" style="border-width:0px;" /></Span><Span class="msrs-menuItemLabelContainer">安全性</Span></a></td>
+			</tr>
+			<tr>
+				<td id="ui_rcmedit" class="msrs-MenuUIItemTableCell" group="2" onmouseover="FocusContextMenuItem('ui_rcmedit','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_rcmedit','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_rcmedit','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();" href="javascript:__doPostBack('contextMenuCollection$ReportContextMenuIdDiv$ctl37','')"><Span class="msrs-menuItemImageContainer"></Span><Span class="msrs-menuItemLabelContainer">管理</Span></a></td>
+			</tr>
+			<tr>
+				<td id="ui_rcmdownload" class="msrs-MenuUIItemTableCell" group="2" onmouseover="FocusContextMenuItem('ui_rcmdownload','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_rcmdownload','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_rcmdownload','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();" href="javascript:__doPostBack('contextMenuCollection$ReportContextMenuIdDiv$ctl41','')"><Span class="msrs-menuItemImageContainer"><img alt="" src="/static/reporting/DownloadFile.gif" style="border-width:0px;" /></Span><Span class="msrs-menuItemLabelContainer">下载...</Span></a></td>
+			</tr>
+		</table>
+
+	</div><div id="contextMenuCollection_FolderContextMenuIdDiv" onkeydown="NavigateMenuKeyPress(event)">
+		<table cellpadding="0" cellspacing="0" class="msrs-MenuUI">
+			<tr>
+				<td><img class="msrs-MenuUIMinWidth" src="/static/reporting/blank.gif" style="border-width:0px;" /></td>
+			</tr>
+			<tr>
+				<td id="ui_fcmmove" class="msrs-MenuUIItemTableCell" group="0" underline="OGUL:0FolderContextMenuIdDiv" onmouseover="FocusContextMenuItem('ui_fcmmove','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_fcmmove','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_fcmmove','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();" href="javascript:__doPostBack('contextMenuCollection$FolderContextMenuIdDiv$ctl05','')"><Span class="msrs-menuItemImageContainer"></Span><Span class="msrs-menuItemLabelContainer">移动</Span></a></td>
+			</tr>
+			<tr>
+				<td id="ui_fcmdelete" class="msrs-MenuUIItemTableCell" group="0" onmouseover="FocusContextMenuItem('ui_fcmdelete','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_fcmdelete','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_fcmdelete','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();return ShouldDelete('是否确实要删除“{0}”?');" href="javascript:__doPostBack('contextMenuCollection$FolderContextMenuIdDiv$ctl09','')"><Span class="msrs-menuItemImageContainer"><img alt="" src="/static/reporting/delitem.gif" style="border-width:0px;" /></Span><Span class="msrs-menuItemLabelContainer">删除</Span></a></td>
+			</tr>
+			<tr id="OGUL:0FolderContextMenuIdDiv">
+				<td><Div class="msrs-MenuUISeparator">#</Div></td>
+			</tr>
+			<tr>
+				<td id="ui_fcmsec" class="msrs-MenuUIItemTableCell" group="1" underline="OGUL:0FolderContextMenuIdDiv" onmouseover="FocusContextMenuItem('ui_fcmsec','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_fcmsec','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_fcmsec','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();" href="javascript:__doPostBack('contextMenuCollection$FolderContextMenuIdDiv$ctl16','')"><Span class="msrs-menuItemImageContainer"><img alt="" src="/static/reporting/security16.gif" style="border-width:0px;" /></Span><Span class="msrs-menuItemLabelContainer">安全性</Span></a></td>
+			</tr>
+			<tr>
+				<td id="ui_fcmedit" class="msrs-MenuUIItemTableCell" group="1" onmouseover="FocusContextMenuItem('ui_fcmedit','msrs-MenuUIItemTableHover','msrs-MenuUIItemTableCell');" onmouseout="SwapStyle('ui_fcmedit','msrs-MenuUIItemTableCell');" onblur="SwapStyle('ui_fcmedit','msrs-MenuUIItemTableCell');"><a onclick="HideMenu();" href="javascript:__doPostBack('contextMenuCollection$FolderContextMenuIdDiv$ctl21','')"><Span class="msrs-menuItemImageContainer"></Span><Span class="msrs-menuItemLabelContainer">管理</Span></a></td>
+			</tr>
+		</table>
+
+	</div>
+</div></span></form></BODY></HTML>

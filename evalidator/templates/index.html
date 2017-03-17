@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <table width="100%" class="msrs-normal" cellpadding="0" cellspacing="0" height="100%">
+    {% include 'navi_head.html' %}
+	<tr height="100%">
+		<td valign="top"><table width="100%" class="msrs-contentFrame" cellpadding="0" cellspacing="0" height="100%">
+			<tr>
+				<td valign="top" height="100%"><span><table width="100%" class="msrs-normal" cellpadding="0" cellspacing="0" height="100%">
+					<tr>
+						<td valign="top"><span style="display:inline-block;height:100%;width: 100%;"><script language="Javascript" type="text/Javascript">function ControlConditionalEnable10(topLevelEnable) {EnableMultiButtons('ui_');}</script><span><table width="100%" class="msrs-normal" cellpadding="0" cellspacing="0">
+							<tr class="msrs-toolbar_top" height="6">
+								<td valign="top"></td>
+							</tr>
+							<tr class="msrs-tool">
+								<td valign="top"><table width="100%" cellpadding="0" cellspacing="0">
+									<tr>
+										<td valign="top" width="5"><img src="/static/reporting/blank.gif" height="0" width="5" /></td>
+										<td valign="middle"><a id="ui_btnNewFold" class="msrs-buttonHeaderButton msrs-buttonHeaderText" title="新建文件夹" href="/Reports/Pages/FolderProperties.aspx?CreateNew=True&amp;ItemPath=%2fold%2f%e6%96%b0%e5%bb%ba%e6%96%87%e4%bb%b6%e5%a4%b9&amp;RedirectUrl=http%3a%2f%2fbi.tuhu.cn%2fReports%2fPages%2fFolder.aspx%3fItemPath%3d%252fold%26ViewMode%3dList" onmouseover="this.className='msrs-buttonHeaderButtonHover msrs-buttonHeaderText';" onmouseout="this.className='msrs-buttonHeaderButton msrs-buttonHeaderText';" style="display:inline-block;white-space:nowrap;padding-top:2px;padding-bottom:2px;padding-left:5px;padding-right:5px;text-decoration:none;"><img align="absmiddle" title="新建文件夹" src="/static/reporting/16newfolder.gif" alt="新建文件夹" style="border-style:None;height:16px;width:16px;border-width:0px;margin-right:3px;" />新建文件夹</a></td>
+										<td valign="top" class="msrs-toolBarSpacerImage"><img src="/static/reporting/divider.gif" style="height:16px;width:16px;border-width:0px;" /></td>
+										<td valign="middle"><a id="ui_btnNewDataSource" class="msrs-buttonHeaderButton msrs-buttonHeaderText" title="新建数据源" href="/Reports/Pages/DataSource.aspx?CreateNew=True&amp;ItemsParentPath=%2fold&amp;RedirectUrl=http%3a%2f%2fbi.tuhu.cn%2fReports%2fPages%2fFolder.aspx%3fItemPath%3d%252fold%26ViewMode%3dList" onmouseover="this.className='msrs-buttonHeaderButtonHover msrs-buttonHeaderText';" onmouseout="this.className='msrs-buttonHeaderButton msrs-buttonHeaderText';" style="display:inline-block;white-space:nowrap;padding-top:2px;padding-bottom:2px;padding-left:5px;padding-right:5px;text-decoration:none;"><img align="absmiddle" title="新建数据源" src="/static/reporting/16newdatasource.gif" alt="新建数据源" style="border-style:None;height:16px;width:16px;border-width:0px;margin-right:3px;" />新建数据源</a></td>
+										<td valign="top" class="msrs-toolBarSpacerImage"><img src="/static/reporting/divider.gif" style="height:16px;width:16px;border-width:0px;" /></td>
+										<td valign="middle"><a id="ui_btnSettings" class="msrs-buttonHeaderButton msrs-buttonHeaderText" title="文件夹设置" href="{% url 'folder' %}?path=%2fold&amp;SelectedTabId=PropertiesTab" onmouseover="this.className='msrs-buttonHeaderButtonHover msrs-buttonHeaderText';" onmouseout="this.className='msrs-buttonHeaderButton msrs-buttonHeaderText';" style="display:inline-block;white-space:nowrap;padding-top:2px;padding-bottom:2px;padding-left:5px;padding-right:5px;text-decoration:none;"><img align="absmiddle" title="文件夹设置" src="/static/reporting/edit_folder.gif" alt="文件夹设置" style="border-style:None;height:16px;width:16px;border-width:0px;margin-right:3px;" />文件夹设置</a></td>
+										<td valign="top" class="msrs-toolBarSpacerImage"><img src="/static/reporting/divider.gif" style="height:16px;width:16px;border-width:0px;" /></td>
+										<td valign="middle"><a id="ui_btnUpload" class="msrs-buttonHeaderButton msrs-buttonHeaderText" title="上载文件" href="/Reports/Pages/Import.aspx?path=%2fold&amp;&amp;RedirectUrl=http%3a%2f%2fbi.tuhu.cn%2fReports%2fPages%2fFolder.aspx%3fItemPath%3d%252fold%26ViewMode%3dList" onmouseover="this.className='msrs-buttonHeaderButtonHover msrs-buttonHeaderText';" onmouseout="this.className='msrs-buttonHeaderButton msrs-buttonHeaderText';" style="display:inline-block;white-space:nowrap;padding-top:2px;padding-bottom:2px;padding-left:5px;padding-right:5px;text-decoration:none;"><img align="absmiddle" title="上载文件" src="/static/reporting/UploadFile.gif" alt="上载文件" style="border-style:None;height:16px;width:16px;border-width:0px;margin-right:3px;" />上载文件</a></td>
+										<td valign="top" width="3"><img src="/static/reporting/blank.gif" height="0" width="3" /></td>
+										<td width="100%"></td>
+										<td valign="middle"><a id="ui_btnSwitchView" class="msrs-buttonHeaderButton msrs-buttonHeaderText" title="详细信息视图" href="http://bi.tuhu.cn:80{% url 'folder' %}?path=%2fold&amp;ViewMode=Detail" onmouseover="this.className='msrs-buttonHeaderButtonHover msrs-buttonHeaderText';" onmouseout="this.className='msrs-buttonHeaderButton msrs-buttonHeaderText';" style="display:inline-block;white-space:nowrap;padding-top:2px;padding-bottom:2px;padding-left:5px;padding-right:5px;text-decoration:none;"><img align="absmiddle" title="详细信息视图" src="/static/reporting/view_detail.gif" alt="详细信息视图" style="border-style:None;height:16px;width:16px;border-width:0px;margin-right:3px;" />详细信息视图</a></td>
+										<td valign="top" width="5"><img src="/static/reporting/blank.gif" height="0" width="5" /></td>
+										<td valign="top">&nbsp;</td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+							<tr class="msrs-toolbar_bottom" height="6">
+								<td valign="top"></td>
+							</tr>
+						</table>
+						</span><table width="100%" class="msrs-normal" cellpadding="0" cellspacing="0" TITLE="old 中的项">
+							<tr>
+								<td valign="top" width="10"><img src="/static/reporting/blank.gif" height="0" width="10" /></td>
+								<td valign="top" width="100%"><table width="100%" class="msrs-normal" cellpadding="0" cellspacing="0">
+									<tr>
+										<td valign="top" height="5px"></td>
+									</tr>
+									<tr>
+										<td valign="top">
+
+                                        {% block corecontent %}
+
+										{% for  result in res.folder %}
+										<Div class="msrs-tileView"><table id="ui_a{{ result.id }}" class="msrs-UnSelectedItem" onclick="Clicked(event,'contextMenuCollection_FolderContextMenuIdDiv')" onmouseover="ChangeReportItemStyleOnMouseOver('ui_a{{ result.id }}', 'msrs-SelectedItem', 'msrs-UnSelectedItem')" onmouseout="ChangeReportItemStyleOnMouseOut('ui_a{{ result.id }}', 'msrs-UnSelectedItem')" onfocus="ChangeReportItemStyleOnMouseOver('ui_a{{ result.id }}', 'msrs-SelectedItem', 'msrs-UnSelectedItem')" onblur="ChangeReportItemStyleOnMouseOut('ui_a{{ result.id }}', 'msrs-UnSelectedItem')" onkeydown="OpenMenuKeyPress(event,'contextMenuCollection_FolderContextMenuIdDiv')" value="{{ result.name }}">
+											<tr>
+												<td><a href="{% url 'folder' %}?path={{ result.id }}&amp;ViewMode=List" onmouseover="OnLink()" onmouseout="OffLink()" TabIndex="-1"><img src="/static/reporting/folder_32.gif" alt="文件夹" style="height:32px;width:32px;border-width:0px;visibility:visible;" /></a></td>
+												<td><a href="{% url 'folder' %}?path={{ result.id }}&amp;ViewMode=List" onmouseover="OnLink()" onmouseout="OffLink()" onfocus="ChangeReportItemStyleOnMouseOver('ui_a{{ result.id }}', 'msrs-SelectedItem', 'msrs-UnSelectedItem')" onblur="ChangeReportItemStyleOnMouseOut('ui_a{{ result.id }}', 'msrs-UnSelectedItem')" class="msrs-itemName" title="{{ result.name }}">{{ result.name }}</a></td>
+												<td width="20px;"><img src="/static/reporting/Menu1.gif" alt="打开菜单" /></td>
+											</tr>
+										</table>
+										</Div>
+										{% endfor %}
+										{% for  result in res.file %}
+										<Div class="msrs-tileView"><table id="ui_a{{ result.id }}" class="msrs-UnSelectedItem" onclick="Clicked(event,'contextMenuCollection_ReportContextMenuIdDiv')" onmouseover="ChangeReportItemStyleOnMouseOver('ui_a{{ result.id }}', 'msrs-SelectedItem', 'msrs-UnSelectedItem')" onmouseout="ChangeReportItemStyleOnMouseOut('ui_a{{ result.id }}', 'msrs-UnSelectedItem')" onfocus="ChangeReportItemStyleOnMouseOver('ui_a{{ result.id }}', 'msrs-SelectedItem', 'msrs-UnSelectedItem')" onblur="ChangeReportItemStyleOnMouseOut('ui_a{{ result.id }}', 'msrs-UnSelectedItem')" onkeydown="OpenMenuKeyPress(event,'contextMenuCollection_ReportContextMenuIdDiv')" value="{{ result.name }}">
+											<tr>
+												<td><a href="{% url 'file' %}?path={{ result.id }}" onmouseover="OnLink()" onmouseout="OffLink()" TabIndex="-1"><img src="/static/reporting/RB_document_32.gif" alt="报表" style="height:32px;width:32px;border-width:0px;visibility:visible;" /></a></td>
+												<td><a href="{% url 'file' %}?path={{ result.id }}" onmouseover="OnLink()" onmouseout="OffLink()" onfocus="ChangeReportItemStyleOnMouseOver('ui_a{{ result.id }}', 'msrs-SelectedItem', 'msrs-UnSelectedItem')" onblur="ChangeReportItemStyleOnMouseOut('ui_a{{ result.id }}', 'msrs-UnSelectedItem')" class="msrs-itemName" title="{{ result.name }}">{{ result.name }}</a></td>
+												<td width="20px;"><img src="/static/reporting/Menu1.gif" alt="打开菜单" /></td>
+											</tr>
+										</table>
+										</Div>
+										{% endfor %}
+
+                                        {% endblock %}
+										</td>
+									</tr>
+								</table>
+								</td>
+								<td valign="top" width="10"><img src="/static/reporting/blank.gif" height="0" width="10" /></td>
+							</tr>
+						</table>
+						<script language="Javascript" type="text/Javascript">var multiButtonList = [];</script></span></td>
+					</tr>
+				</table>
+				</span></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+{% endblock %}
