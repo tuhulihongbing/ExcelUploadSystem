@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% block custom_css_js %}
+    <script src="/static/reporting/custom.js?v=2.12"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/custom_detail_field_list.css?v=1" />
+{% endblock %}
+{% block content %}
+<table width="100%" class="msrs-normal" cellpadding="0" cellspacing="0" height="100%">
+{% include 'navi_head.html' %}
+	<tr height="100%">
+		<td valign="top"><table width="100%" class="msrs-contentFrame" cellpadding="0" cellspacing="0" height="100%">
+			<tr>
+				<td valign="top" height="100%"><div class="msrs-bgimage">
+					<table width="100%" class="msrs-workFlow" cellpadding="0" cellspacing="0" height="100%">
+                        {% block corecontent %}
+						<tr>
+							<td valign="top" class="msrs-subtabs"><table width="100%" class="msrs-normal" cellspacing="0" height="100%">
+								<tr>
+									<td valign="top" height="35px" class="msrs-proTabBlank"></td>
+								</tr>
+								<tr>
+									<td valign="top" nowrap="nowrap" class="msrs-proTabOn"><span title="指定报表名称、说明和其他属性。">属性</span></td>
+								</tr>
+								<tr>
+									<td valign="top" nowrap="nowrap" class="msrs-proTab"><a href="http://bi.tuhu.cn/Reports/Pages/Report.aspx?ItemPath=%2f%e5%ae%9e%e6%97%b6%e7%9b%91%e6%8e%a7%2f618%e4%bb%93%e5%ba%93%e4%bd%9c%e4%b8%9a%e8%bf%9b%e5%ba%a6&amp;SelectedTabId=PropertiesTab&amp;SelectedSubTabId=ReportDataSourcePropertiesTab" title="指定此报表的数据源属性">数据源</a></td>
+								</tr>
+								<tr>
+									<td valign="top" nowrap="nowrap" class="msrs-proTab"><a href="http://bi.tuhu.cn/Reports/Pages/Report.aspx?ItemPath=%2f%e5%ae%9e%e6%97%b6%e7%9b%91%e6%8e%a7%2f618%e4%bb%93%e5%ba%93%e4%bd%9c%e4%b8%9a%e8%bf%9b%e5%ba%a6&amp;SelectedTabId=PropertiesTab&amp;SelectedSubTabId=SubscriptionsTab" title="创建或修改报表订阅。">订阅</a></td>
+								</tr>
+								<tr>
+									<td valign="top" nowrap="nowrap" class="msrs-proTab"><a href="http://bi.tuhu.cn/Reports/Pages/Report.aspx?ItemPath=%2f%e5%ae%9e%e6%97%b6%e7%9b%91%e6%8e%a7%2f618%e4%bb%93%e5%ba%93%e4%bd%9c%e4%b8%9a%e8%bf%9b%e5%ba%a6&amp;SelectedTabId=PropertiesTab&amp;SelectedSubTabId=ExecutionPropertiesTab" title="指定确定报表服务器如何运行报表的属性">处理选项</a></td>
+								</tr>
+								<tr>
+									<td valign="top" nowrap="nowrap" class="msrs-proTab"><a href="http://bi.tuhu.cn/Reports/Pages/Report.aspx?ItemPath=%2f%e5%ae%9e%e6%97%b6%e7%9b%91%e6%8e%a7%2f618%e4%bb%93%e5%ba%93%e4%bd%9c%e4%b8%9a%e8%bf%9b%e5%ba%a6&amp;SelectedTabId=PropertiesTab&amp;SelectedSubTabId=CacheRefreshPlans" title="创建或者修改报表缓存刷新计划。">缓存刷新选项</a></td>
+								</tr>
+								<tr>
+									<td valign="top" nowrap="nowrap" class="msrs-proTab"><a href="http://bi.tuhu.cn/Reports/Pages/Report.aspx?ItemPath=%2f%e5%ae%9e%e6%97%b6%e7%9b%91%e6%8e%a7%2f618%e4%bb%93%e5%ba%93%e4%bd%9c%e4%b8%9a%e8%bf%9b%e5%ba%a6&amp;SelectedTabId=PropertiesTab&amp;SelectedSubTabId=SnapshotsTab" title="查看当前报表的报表历史记录。">报表历史记录</a></td>
+								</tr>
+								<tr>
+									<td valign="top" nowrap="nowrap" class="msrs-proTab"><a href="http://bi.tuhu.cn/Reports/Pages/Report.aspx?ItemPath=%2f%e5%ae%9e%e6%97%b6%e7%9b%91%e6%8e%a7%2f618%e4%bb%93%e5%ba%93%e4%bd%9c%e4%b8%9a%e8%bf%9b%e5%ba%a6&amp;SelectedTabId=PropertiesTab&amp;SelectedSubTabId=HistoryPropertiesTab" title="指定确定如何保留报表历史记录的属性。">快照选项</a></td>
+								</tr>
+								<tr>
+									<td valign="top" nowrap="nowrap" class="msrs-proTab"><a href="http://bi.tuhu.cn/Reports/Pages/Report.aspx?ItemPath=%2f%e5%ae%9e%e6%97%b6%e7%9b%91%e6%8e%a7%2f618%e4%bb%93%e5%ba%93%e4%bd%9c%e4%b8%9a%e8%bf%9b%e5%ba%a6&amp;SelectedTabId=PropertiesTab&amp;SelectedSubTabId=AuthorizationTab" title="指定此站点的安全设置。">安全性</a></td>
+								</tr>
+								<tr>
+									<td valign="top" height="100%" class="msrs-proTabBlank"></td>
+								</tr>
+							</table>
+							</td>
+							<td valign="top" width="84%" class="msrs-proPage"><span><span><table width="100%" class="msrs-normal" cellpadding="0" cellspacing="0">
+								<tr class="msrs-toolbar_top" height="6">
+									<td valign="top"></td>
+								</tr>
+								<tr class="msrs-tool">
+									<td valign="top"><table width="100%" cellpadding="0" cellspacing="0">
+										<tr>
+											<td valign="top" width="5"><img src="/static/reporting/blank.gif" height="0" width="5" /></td>
+											<td valign="middle"><a id="ui_btnDelete" class="msrs-buttonHeaderButton msrs-buttonHeaderText" title="删除" allowMultiSelect="true" onmouseover="this.className='msrs-buttonHeaderButtonHover msrs-buttonHeaderText';" onmouseout="this.className='msrs-buttonHeaderButton msrs-buttonHeaderText';" href="javascript:if(confirm('是否确实要删除 618仓库作业进度?'))__doPostBack('ui_btnDelete','');" style="display:inline-block;white-space:nowrap;padding-top:2px;padding-bottom:2px;padding-left:5px;padding-right:5px;text-decoration:none;"><img align="absmiddle" title="删除" src="/static/reporting/16del.gif" alt="删除" style="border-style:None;height:16px;width:16px;border-width:0px;margin-right:3px;" />删除</a></td>
+											<td valign="top" class="msrs-toolBarSpacerImage"><img src="/static/reporting/divider.gif" style="height:16px;width:16px;border-width:0px;" /></td>
+											<td valign="middle"><a id="ui_btnMove" class="msrs-buttonHeaderButton msrs-buttonHeaderText" title="移动" allowMultiSelect="true" onmouseover="this.className='msrs-buttonHeaderButtonHover msrs-buttonHeaderText';" onmouseout="this.className='msrs-buttonHeaderButton msrs-buttonHeaderText';" href="javascript:__doPostBack('ui_btnMove','');" style="display:inline-block;white-space:nowrap;padding-top:2px;padding-bottom:2px;padding-left:5px;padding-right:5px;text-decoration:none;"><img align="absmiddle" title="移动" src="/static/reporting/16move.gif" alt="移动" style="border-style:None;height:16px;width:16px;border-width:0px;margin-right:3px;" />移动</a></td>
+											<td valign="middle" class="msrs-toolBarSpacerImage"><img src="/static/reporting/divider.gif" style="height:16px;width:16px;border-width:0px;" /></td>
+											<td valign="middle"><a id="ui_btnSaveAsReportDef" class="msrs-buttonHeaderButton msrs-buttonHeaderText" title="创建链接报表" onmouseover="this.className='msrs-buttonHeaderButtonHover msrs-buttonHeaderText';" onmouseout="this.className='msrs-buttonHeaderButton msrs-buttonHeaderText';" href="javascript:__doPostBack('ui_btnSaveAsReportDef','')" style="display:inline-block;white-space:nowrap;padding-top:2px;padding-bottom:2px;padding-left:5px;padding-right:5px;text-decoration:none;"><img align="absmiddle" title="创建链接报表" src="/static/reporting/16linked.gif" alt="创建链接报表" style="border-style:None;height:16px;width:16px;border-width:0px;margin-right:3px;" />创建链接报表</a></td>
+											<td valign="top" class="msrs-toolBarSpacerImage"><img src="/static/reporting/divider.gif" style="height:16px;width:16px;border-width:0px;" /></td>
+											<td valign="middle"><a id="ui_btnSaveReport" class="msrs-buttonHeaderButton msrs-buttonHeaderText" title="下载" href="javascript:" onmouseover="this.className='msrs-buttonHeaderButtonHover msrs-buttonHeaderText';" onmouseout="this.className='msrs-buttonHeaderButton msrs-buttonHeaderText';" style="display:inline-block;white-space:nowrap;padding-top:2px;padding-bottom:2px;padding-left:5px;padding-right:5px;text-decoration:none;"><img align="absmiddle" title="下载" src="/static/reporting/DownloadFile.gif" alt="下载" style="border-style:None;height:16px;width:16px;border-width:0px;margin-right:3px;" />下载</a></td>
+											<td valign="top" class="msrs-toolBarSpacerImage"><img src="/static/reporting/divider.gif" style="height:16px;width:16px;border-width:0px;" /></td>
+											<td valign="middle"><a id="ui_btnReplaceReport" class="msrs-buttonHeaderButton msrs-buttonHeaderText" title="上传" onmouseover="this.className='msrs-buttonHeaderButtonHover msrs-buttonHeaderText';" onmouseout="this.className='msrs-buttonHeaderButton msrs-buttonHeaderText';" href="javascript:PostBack('ui_btnReplaceReport','');PostBack('ui_btnReplaceReport','')" style="display:inline-block;white-space:nowrap;padding-top:2px;padding-bottom:2px;padding-left:5px;padding-right:5px;text-decoration:none;"><img align="absmiddle" title="上传" src="/static/reporting/UploadFile.gif" alt="上传" style="border-style:None;height:16px;width:16px;border-width:0px;margin-right:3px;" />上传</a></td>
+											<td valign="top" width="3"><img src="/static/reporting/blank.gif" height="0" width="3" /></td>
+											<td width="100%"></td>
+											<td valign="top">&nbsp;</td>
+										</tr>
+									</table>
+									</td>
+								</tr>
+								<tr class="msrs-toolbar_bottom" height="6">
+									<td valign="top"></td>
+								</tr>
+								<tr>
+									<td valign="top"><img src="/static/reporting/blank.gif" height="20" width="1" border="0" /></td>
+								</tr>
+							</table>
+							</span>
+                                <div id = "mainpage">
+{#                                    {% include 'ExcelDetail/upload.html' %}#}
+{#                                    {% include 'test2.html' %}#}
+                                    {% include 'ExcelDetail/field_list.html' %}
+                                    {% include 'ExcelDetail/field_change.html' %}
+                                </div>
+							<script language="Javascript" type="text/Javascript">SetFocus('ui_txtChooseName');</script></span></td>
+						</tr>
+                     {% endblock %}
+					</table>
+
+				</div></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+</span>
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl519"), document.getElementById("ctl526"), document.getElementById("ctl533"), document.getElementById("ctl559"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl519 = document.all ? document.all["ctl519"] : document.getElementById("ctl519");
+ctl519.controltovalidate = "ui_txtChooseName";
+ctl519.display = "Dynamic";
+ctl519.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl519.validationexpression = "[^/;\\?:@&=\\+\\$,\\\\\\*<>\\|\"]*[^\\. /;\\?:@&=\\+\\$,\\\\\\*<>\\|\"][^/;\\?:@&=\\+\\$,\\\\\\*<>\\|\"]*";
+var ctl526 = document.all ? document.all["ctl526"] : document.getElementById("ctl526");
+ctl526.controltovalidate = "ui_txtChooseName";
+ctl526.display = "Dynamic";
+ctl526.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl526.validationexpression = ".{1,260}";
+var ctl533 = document.all ? document.all["ctl533"] : document.getElementById("ctl533");
+ctl533.controltovalidate = "ui_txtChooseName";
+ctl533.display = "Dynamic";
+ctl533.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl533.initialvalue = "";
+var ctl559 = document.all ? document.all["ctl559"] : document.getElementById("ctl559");
+ctl559.controltovalidate = "ui_catalogItemDescription";
+ctl559.display = "Dynamic";
+ctl559.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl559.validationexpression = "(.|\\n){0,512}";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+Sys.Application.initialize();
+//]]>
+</script>
+{% endblock %}

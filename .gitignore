@@ -14,9 +14,17 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> parent of 0d96407... upload files
+=======
+*.pyc
+*.xls
+*.xlsx
+*.pdf
+*.xml
+>>>>>>> parent of 5f605bc... no
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
