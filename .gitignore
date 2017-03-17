@@ -1,3 +1,5 @@
+/evalidator/.idea
+/evalidator/upload
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -5,9 +7,7 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 <<<<<<< HEAD
-*.pyc
-/evalidator/.idea
-/evalidator/upload
+
 =======
 >>>>>>> parent of 0d96407... upload files
 
