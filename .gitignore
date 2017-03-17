@@ -8,6 +8,8 @@ Desktop.ini
 *.xls
 *.xlsx
 *.pdf
+*.xml
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
