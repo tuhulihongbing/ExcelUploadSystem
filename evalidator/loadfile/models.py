@@ -4,6 +4,16 @@ from __future__ import unicode_literals
 from django.db import models
 
 # Create your models here.
+class Ziduan(models.Model):
+    name = models.CharField(max_length=20)
+    length = models.IntegerField()
+    Repeatable = models.BooleanField()
+    blankable = models.BooleanField()
+    islimited = models.BooleanField()
+    limitedtablename = models.CharField(max_length=60)
+    limitedziduanname = models.CharField(max_length=60)
+
+
 class User(models.Model):
     headImg = models.FileField(upload_to = './upload/')
     def __unicode__(self):
